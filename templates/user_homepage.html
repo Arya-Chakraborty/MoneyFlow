@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <table class="table"  style="border:2px red solid;">
+        <thead>
+            <tr>
+                <th scope= "col">Sl No.</th>
+                <th scope= "col">Details</th>
+                <th scope= "col">Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-warning">
+                <th scope="row">1</th>
+                <td>Account Number</td>
+                <td>{{ account_number }}</td>
+            </tr>
+            <tr class="table-info">
+                <th scope="row">2</th>
+                <td>Name</td>
+                <td>{{ name }}</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">3</th>
+                <td>Password</td>
+                <td>{{ password }}</td>
+            </tr>
+            <tr class="table-primary">
+                <th scope="row">4</th>
+                <td>Email</td>
+                <td>{{ email }}</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">5</th>
+                <td>Balance</td>
+                <td>INR {{ balance }}</td>
+            </tr>
+        </tbody>
+    </table></div>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+          <div class="text-center lg:w-2/3 w-full">
+            <div class="flex justify-center">
+                <button type="button" class="btn btn-outline-success" onclick="location.href='/deposit'">Desposit</button>
+                <button type="button" class="btn btn-outline-danger ml-4" onclick="location.href='/withdraw'">Withdraw</button>
+                <button type="button" class="btn btn-outline-primary ml-4" onclick="location.href='/temp_change'">Change Details</button>
+                <button type="button" class="btn btn-outline-dark ml-4" onclick="location.href='/show_history'">Show History</button>
+                <button type="button" class="btn btn-outline-danger ml-4" onclick="location.href='/delete_account'">Delete Account</button>
+                <button type="button" class="btn btn-outline-success ml-4" onclick="location.href='/money_transfer'">Money Transfer</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>

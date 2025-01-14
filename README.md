@@ -3,8 +3,8 @@
 MoneyFlow is a failsafe banking application designed for minimalism. It contains all the major applications in a banking app i.e., account creation, withdrawl, deposit, fund transfer, transaction history etc.
 
 ## Tools Used
-1. HTML, CSS, Bootstrap and JavaScript for the frontend
-2. Python and Flask for the backend
+1. HTML, CSS, Bootstrap and Tailwind for the frontend
+2. Python, JS and Flask for the backend
 
 ## Functions
 1. Money deposit

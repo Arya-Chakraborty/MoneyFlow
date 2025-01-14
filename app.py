@@ -9,7 +9,7 @@ db = sqlite3.connect("database.db", check_same_thread=False)
 history = sqlite3.connect("user_history.db", check_same_thread=False)
 account_number = None
 password = None
-
+    
 @app.route("/")
 def login():
     return render_template("login.html")

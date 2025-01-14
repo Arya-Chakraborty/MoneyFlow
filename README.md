@@ -58,6 +58,7 @@ http://127.0.0.1:5000/
 1. Major UI/UX changes with added functionalities (framwork shift to react.js)
 2. Mail Authentication for users during transaction
 3. Intergration of Fixed/recurring deposits
+4. Integration of a chatbot using an LLM to help users with the processes
 
 
 ## Authors
